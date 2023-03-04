@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  match_played: MyText
+  runs: MyText
+  fifties: MyText
+  average: MyText
+  team: one
+
+two:
+  match_played: MyText
+  runs: MyText
+  fifties: MyText
+  average: MyText
+  team: two

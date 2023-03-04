@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  matches_played: MyText
+  won: MyText
+  loss: MyText
+  points: MyText
+  team: one
+
+two:
+  matches_played: MyText
+  won: MyText
+  loss: MyText
+  points: MyText
+  team: two
