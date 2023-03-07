@@ -26,8 +26,8 @@ class UsersController < ApplicationController
     if user && user.password == params[:password]
       token = SecureRandom.hex(10)
       expire_at = Time.now + 15.minutes
-      user.update(token: token, expire_at: expire_at)
-      render json:{token: token, message: "Login Link has been sent to your email successfully"}, status: :ok #200
+      user.update(token: token, expire_at: expire_at, logged_in: true)
+      render json:{token: token, message:"Login has been done successfully"}, status: :ok #200
     else
       render json: {
         error: "Invalid login credentials"

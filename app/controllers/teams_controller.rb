@@ -1,6 +1,6 @@
 class TeamsController < ApplicationController
   before_action :authenticate_request
-  
+
   def index
     teams = Team.all.paginate(page: params[:page], per_page:3)
     render json: teams, status:200
